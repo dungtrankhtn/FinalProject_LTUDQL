@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E413C6E-862C-43B2-A52F-402C50B3B3D5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAnCuoiKy</RootNamespace>
+    <AssemblyName>DoAnCuoiKy</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.2.Core, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.2, Version=17.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddTabControl\TabAdd.cs" />
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhap_sach_moi.png" />
+    <None Include="Resources\logout.jpg" />
+    <None Include="Resources\login_3.png" />
+    <None Include="Resources\phieu_phat.png" />
+    <None Include="Resources\tra_sach.png" />
+    <None Include="Resources\muon_sach2.png" />
+    <None Include="Resources\muon_sach1.png" />
+    <None Include="Resources\muon_sach.png" />
+    <None Include="Resources\mat_sach.png" />
+    <None Include="Resources\thanh_ly_sach.png" />
+    <None Include="Resources\readerCard.png" />
+    <None Include="Resources\addReader.png" />
+    <Content Include="Resources\addStaff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\update322.png" />
+    <None Include="Resources\update321.png" />
+    <None Include="Resources\update32.png" />
+    <None Include="Resources\update2.png" />
+    <None Include="Resources\update1.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\tt_nxb2.png" />
+    <None Include="Resources\tt_nxb1.png" />
+    <None Include="Resources\tt_nxb.png" />
+    <None Include="Resources\tramuon2.png" />
+    <None Include="Resources\tramuon1.png" />
+    <None Include="Resources\tramuon.png" />
+    <None Include="Resources\tl2.png" />
+    <None Include="Resources\tl1.png" />
+    <None Include="Resources\tl.png" />
+    <None Include="Resources\theloai2.png" />
+    <None Include="Resources\theloai1.png" />
+    <None Include="Resources\theloai.png" />
+    <None Include="Resources\tacgia2.png" />
+    <None Include="Resources\tacgia1.png" />
+    <None Include="Resources\tacgia.png" />
+    <None Include="Resources\student2.png" />
+    <None Include="Resources\student1.png" />
+    <None Include="Resources\student.png" />
+    <None Include="Resources\search2.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\search_all2.png" />
+    <None Include="Resources\search_all1.png" />
+    <None Include="Resources\search_all.png" />
+    <None Include="Resources\search_162.png" />
+    <None Include="Resources\search_161.png" />
+    <None Include="Resources\search_16.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\sachchuamuon2.png" />
+    <None Include="Resources\sachchuamuon1.png" />
+    <None Include="Resources\sachchuamuon.png" />
+    <None Include="Resources\report_sach2.png" />
+    <None Include="Resources\report_sach1.png" />
+    <None Include="Resources\report_sach.png" />
+    <None Include="Resources\report_docgia2.png" />
+    <None Include="Resources\report_docgia1.png" />
+    <None Include="Resources\report_docgia.png" />
+    <None Include="Resources\pt2.png" />
+    <None Include="Resources\pt1.png" />
+    <None Include="Resources\pt.png" />
+    <None Include="Resources\pp2.png" />
+    <None Include="Resources\pp1.png" />
+    <None Include="Resources\pp.png" />
+    <None Include="Resources\pm2.png" />
+    <None Include="Resources\pm1.png" />
+    <None Include="Resources\pm.png" />
+    <None Include="Resources\password2.png" />
+    <None Include="Resources\password1.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\nxb2.png" />
+    <None Include="Resources\nxb1.png" />
+    <None Include="Resources\nxb.png" />
+    <None Include="Resources\logo2.png" />
+    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\Login2.png" />
+    <None Include="Resources\Login1.png" />
+    <None Include="Resources\Login.png" />
+    <None Include="Resources\Login Manager2.png" />
+    <None Include="Resources\Login Manager1.png" />
+    <None Include="Resources\Login Manager.png" />
+    <None Include="Resources\info2.png" />
+    <None Include="Resources\info1.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\incon12.png" />
+    <None Include="Resources\incon11.png" />
+    <None Include="Resources\incon1.png" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\help1.png" />
+    <None Include="Resources\help.png" />
+    <None Include="Resources\group2.png" />
+    <None Include="Resources\group1.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\find2.png" />
+    <None Include="Resources\find1.png" />
+    <None Include="Resources\find_people2.png" />
+    <None Include="Resources\find_people1.png" />
+    <None Include="Resources\find_people.png" />
+    <None Include="Resources\find_book2.png" />
+    <None Include="Resources\find_book1.png" />
+    <None Include="Resources\find_book.png" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\exit2.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\edit_tacgia2.png" />
+    <None Include="Resources\edit_tacgia1.png" />
+    <None Include="Resources\edit_tacgia.png" />
+    <None Include="Resources\ebook2.png" />
+    <None Include="Resources\ebook1.png" />
+    <None Include="Resources\ebook.png" />
+    <None Include="Resources\del322.png" />
+    <None Include="Resources\del321.png" />
+    <None Include="Resources\del32.png" />
+    <None Include="Resources\del2.png" />
+    <None Include="Resources\del1.png" />
+    <None Include="Resources\del.png" />
+    <None Include="Resources\DangNhap2.png" />
+    <None Include="Resources\DangNhap1.png" />
+    <None Include="Resources\DangNhap.png" />
+    <None Include="Resources\cen22.png" />
+    <None Include="Resources\cen21.png" />
+    <None Include="Resources\cen12.png" />
+    <None Include="Resources\cen11.png" />
+    <None Include="Resources\cen2.png" />
+    <None Include="Resources\cen1.png" />
+    <None Include="Resources\cancel322.png" />
+    <None Include="Resources\cancel321.png" />
+    <None Include="Resources\cancel32.png" />
+    <None Include="Resources\apply15.png" />
+    <None Include="Resources\apply14.png" />
+    <None Include="Resources\apply13.png" />
+    <None Include="Resources\apply12.png" />
+    <None Include="Resources\apply11.png" />
+    <None Include="Resources\apply3.png" />
+    <None Include="Resources\apply2.png" />
+    <None Include="Resources\apply1.png" />
+    <None Include="Resources\apply.png" />
+    <None Include="Resources\add322.png" />
+    <None Include="Resources\add321.png" />
+    <None Include="Resources\add32.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\about2.png" />
+    <None Include="Resources\about1.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\14947759_1770373813183225_5734809984225518922_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{fe3f0340-3dc5-40c2-8916-99a4d1e462b8}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{0e76657b-df9b-4fff-a0f6-71fa1d474da2}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{78ad2424-d09e-4294-af12-9d62d83b416d}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUI\GUI.csproj">
+      <Project>{2ef6fbea-b448-43ab-a727-e891083cfbf1}</Project>
+      <Name>GUI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
